@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supreme</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://jp.supreme.com/cdn/shop/t/2/assets/favicon-196x196.png?v=126995583929410334081663966317%22"
+    rel="shortcut icon" type="img222/Supfavicon.png">
+</head>
+
+<body>
+    <!-- 배경 동영상------------------ -->
+    <figure class="vid">
+        <video loop="loop" autoplay="autoplay" muted>
+            <source src="img222/Supreme SS.mp4" type="video/mp4" />
+        </video>
+    </figure>
+
+    <!-- 로고 ------------------->
+    <h1><img src="img222/width-supreme-check.png" width="200px" height="150px"></h1>
+
+
+    <!-- 시계 -->
+
+    <div id="clock"></div>
+
+
+
+    <!-- header--------------------- -->
+    <ul id="gnb">
+        <li class="on">
+            <a href="https://supreme.com/news/"><em>News</em></a>
+        </li>
+        <li class="on">
+            <a href="https://jp.supreme.com/pages/shop"><em>Shop</em></a>
+        </li>
+        <li class="on">
+            <a href="https://supreme.com/random/swizz-beatz/"><em>Random</em></a>
+        </li>
+        <li class="on">
+            <a href="https://supreme.com/about/"><em>About</em></a>
+        </li>
+        <li class="on">
+            <a href="https://supreme.com/stores/"><em>Stores</em></a>
+        </li>
+        <li class="on">
+            <a href="https://supreme.com/contact/"><em>Contact</em></a>
+        </li>
+        <li class="on">
+            <a href="https://supreme.com/mailinglist/"><em>Mailing List</em></a>
+        </li>
+
+
+    </ul>
+
+    <!-- sns  버튼모음 -->
+    <ul id="sns">
+        <li><a href="https://www.facebook.com/supreme"><i class="fa-brands fa-square-facebook" style="color:white"></i></a></li>
+        <li><a href="https://twitter.com/supreme_nyc"><i class="fa-brands fa-square-x-twitter" style="color:white"></i></a></li>
+        <li><a href="https://www.youtube.com/@supreme"><i class="fa-brands fa-square-youtube" style="color:white"></i></i></a></li>
+        <li><a href="https://www.instagram.com/supremenewyork/"><i class="fa-brands fa-square-instagram" style="color:white"></i></i></a></li>
+    </ul>
+
+    <!-- 하단 컨텐츠박스 -->
+    <section id="side">
+		<div class="con">
+			<p>
+				<em>Supreme Force White</em>
+				<a href="#"><img src="img222/신발1.jpeg" /></a>				
+			</p>
+			<p>
+				<em>Supreme Force Black</em>
+				<a href="#"><img src="img222/신발2.jpeg" /></a>				
+			</p>
+			<p>
+				<em>Supreme Force Brown</em>
+				<a href="#"><img src="img222/신발3.jpeg" /></a>				
+			</p>		
+		</div>	
+
+        <div class="btnContents">
+            <i class="fa fa-angle-double-left"></i>
+            <i class="fa fa-angle-double-left"></i>
+            <i class="fa fa-angle-double-left"></i>
+        </div>
+    </section>
+
+
+
+<script>
+        
+        function displaySeoulTime() {
+           
+            const seoulTimeZone = 'Asia/Seoul';
+
+            
+            const now = new Date();
+            const seoulTime = now.toLocaleString('en-US', { timeZone: seoulTimeZone });
+
+            const clockElement = document.getElementById('clock');
+            clockElement.textContent = seoulTime + ' Seoul';
+        }
+
+        
+        setInterval(displaySeoulTime, 1000); 
+    </script>
+
+
+
+
+</body>
+
+</html>

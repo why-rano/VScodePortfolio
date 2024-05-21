@@ -1,0 +1,95 @@
+
+
+
+/* /*reset css */
+*{margin: 0; padding: 0;}
+ol,ul{list-style: none;}
+a {text-decoration: none;}
+
+
+
+/* 배경동영상 */
+.vid{width: 100%; height: 100%;}
+.vid video{width: 100%;}
+
+
+/* 로고 */
+h1{position: absolute; top: 0px; left: 10px; }
+h1 img {width: 280px; height: auto;}
+header {width: 700px; height: 100%; position: fixed; top: 0px; left: 20px; }
+
+/* 시계 */
+
+#clock {
+    position: absolute;
+    top: 160px; /* 로고 아래 위치 조정 */
+    left: 40px; /* 로고와 시계 간격을 조절해주세요 */
+    font-size: 15px; /* 시계 글꼴 크기 조정 */
+    font-style: italic;
+    color: white;}
+
+
+/* 1depth */
+
+#gnb{width: 100px; position: absolute; top: 200px; left: 40px; }
+#gnb li a em:hover{font-weight:bold; background-color: red;}
+#gnb li a em{color: white;}
+
+
+
+/* sns  버튼모음 */
+#sns{position: fixed; top: 60px; right: 50px;}
+#sns li{float: left; margin-right: 30px;}
+#sns li a i {
+    font-size: 25px;
+    color: white;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+#sns li a i:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+
+
+/* contents 레이아웃 */
+#side { width:800px; height:100%; position:fixed; bottom:0px; right:-800px; background:#111; opacity:0.5; transform:skewX(-40deg); transition:all 0.5s;}
+#side:hover { right:-500px; opacity:0.8;}
+#side .con { width:400px; height:100%; position:absolute; left:150px; bottom:0px; background:#000; 	box-sizing:border-box; padding:10px; transition:all  1s;}
+#side:hover .con { left:50px;}
+
+/* contents내 썸네일 */
+#side .con p { width: 300px; height:100px; position:absolute; left:50px;}
+#side .con p em { display:inline-block; font:bold 16px/1.7 arial; color:white; transform:skewX(40deg);}
+#side .con p img { width:300px; height:70px; opacity:0.3; transition:all 0.5s;}
+#side .con p img:hover { opacity:1;}
+#side .con p:nth-child(1) { bottom:270px; transform: translateX(200px); transition:all  0.4s;}
+#side .con p:nth-child(2) { bottom:160px; transform: translateX(200px); transition:all  0.8s;}
+#side .con p:nth-child(3) { bottom:50px; transform: translateX(200px); transition:all  1.2s;}
+#side:hover .con p { transform:translateX(0px);}	
+
+
+
+/* 자동롤링 버튼*/
+#side .btnContents { width:150px; height:50px; position:absolute;  bottom:40px; left:100px; color:white;	transform:skewX(40deg); }
+#side:hover .btnContents { left:700px;}	
+.btnContents i { font-size:60px; position:absolute; bottom:0px; right:0px; opacity:1;}
+.btnContents i:nth-child(1) { animation:ani linear 1.5s 1.0s infinite;}
+.btnContents i:nth-child(2) { animation:ani linear 1.5s 0.5s infinite;}
+.btnContents i:nth-child(3) { animation:ani linear 1.5s 0s infinite;}
+
+@keyframes ani {
+	0% { right:0px; transform:sclae(1); opacity:1;}
+	100% { right:100px; transform:scale(1.5); opacity:0;}
+}
+
+
+
+
+
+
+
+
+
